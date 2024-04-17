@@ -1,0 +1,165 @@
+.live {
+    margin: 0;
+    padding: 140px 0 255px 0;
+    background: $black-y;
+    background-image: url("../src/image/raster/section5_live/background-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__content {
+        @extend %position-center;
+        flex-direction: column;
+        gap: 100px;
+    }
+    &__title {
+        width: 940px;
+        color: $white-stand;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        @extend %font-a;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    &__video-group {
+        @extend %position-center;
+        flex-direction: column;
+        gap: 125px;
+    }
+    &__main-video {
+        width: 1056px;
+        height: 594px;
+        flex-shrink: 0;
+        border-radius: 10px;
+    }
+    &__other-video-group {
+        @include flex(center, start);
+        gap: 75px;
+    }
+    &__video-card {
+        @include flex(center, start);
+        gap: 42px;
+    }
+    &__mini-video {
+        width: 233px;
+        height: 151px;
+        flex-shrink: 0;
+        border-radius: 5px;
+    }
+    &__text-box {
+        @include flex(start, start);
+        flex-direction: column;
+        gap: 25px;
+    }
+    &__card-title {
+        color: $white-stand;
+        @extend %font-a;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 150%; 
+    }
+    &__card-paragraf {
+        width: 335px;
+        color: $white-stand;
+        font-feature-settings: 'clig' off, 'liga' off;
+        @extend %font-a;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px; 
+        letter-spacing: 0.5px;
+        opacity: 0.7;
+    }
+}
+@media (max-width: 1400px) {
+    .live {
+        &__content {
+            gap: 80px;
+        }
+        &__video-card {
+            @include flex(center, start);
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .live {
+        padding: 100px 0 200px 0;
+        &__content {
+            gap: 70px;
+        }
+        &__title {
+            width: 500px;
+            font-size: 40px;
+            line-height: 46px;
+        }
+        &__video-group {
+            gap: 50px;
+        }
+        &__main-video {
+            width: 600px;
+            height: auto;
+        }
+        &__other-video-group {
+            gap: 50px;
+        }
+        &__mini-video {
+            width: 200px;
+            height: auto;
+        }
+        &__text-box {
+            gap: 15px;
+        }
+        &__card-title {
+            font-size: 15px;
+        }
+        &__card-paragraf {
+            width: 200px;
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .live {
+        margin: 0;
+        padding: 83px 0 30px 0;
+        &__content {
+            gap: 64px;
+        } 
+        &__title {
+            width: 314px;
+        }  
+        &__video-group {
+            gap: 40px;
+        }
+        &__main-video {
+            width: 314px;
+            height: 192px;
+        }
+        &__other-video-group {
+            flex-direction: column;
+            gap: 40px;
+        }
+        &__video-card {
+            @include flex(center, center);
+            gap: 40px;
+        }
+        &__mini-video {
+            width: 314px;
+            height: 176px;     
+        }
+        &__text-box {
+            @include flex(center, center);
+            gap: 12px;
+        }
+        &__card-title {
+            font-size: 22px;
+        }
+        &__card-paragraf {
+            width: 314px;
+            font-size: 16px;
+            line-height: 24px; 
+            text-align: center;
+        }
+    }
+}

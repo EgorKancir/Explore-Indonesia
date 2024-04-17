@@ -1,0 +1,64 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p, 
+ul, 
+li {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1640px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+@import
+'utils/mixin', 
+'utils/placholder', 
+'utils/variables';
+@import
+'components/header', 
+'components/description', 
+'components/explor', 
+'components/our', 
+'components/live',
+'components/gallery',
+'components/getting',
+'components/footer';
+@media (max-width: 1400px) {
+    .container {
+        width: 1200px;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        width: 992px;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        width: 768px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 344px;
+    }
+}

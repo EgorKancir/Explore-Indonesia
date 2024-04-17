@@ -1,0 +1,160 @@
+.footer {
+    margin: 0;
+    padding: 39px 150px 30px 70px;
+    background: $black-y;
+    position: relative;
+    @include flex(space-between, center);
+    &__navigation {
+        @extend %position-center;
+        gap: 124px;
+    }
+    &__info {
+        gap: 50px;
+    }
+    &__signature {
+        color: $white-stand;
+        font-feature-settings: 'clig' off, 'liga' off;
+        @extend %font-a;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px; 
+        letter-spacing: 0.5px;
+    }
+}
+.footer-nav {
+    &__list {
+        @extend %position-center;
+        gap: 36px;
+    }
+    &__link {
+        color: $white-stand;
+        font-feature-settings: 'clig' off, 'liga' off;
+        @extend %font-a;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+        display: flex;
+        transition: all 0.2s linear;
+        &:hover {
+            opacity: 0.8;
+            transform: scale(1.1);
+        }
+    }
+}
+.logo-footer {
+    &__image {
+        width: 174px;
+        height: 65.749px;
+        flex-shrink: 0;
+    }
+}
+.arrow {
+    position: absolute;
+    top: -52px;
+    right: 100px;
+    @extend %position-center;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
+    &__icon {
+        width: 124px;
+        height: 124px;
+    }
+}
+.social-networks {
+    gap: 22px;
+    &__link {
+        fill: $white-stand;
+        display: flex;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            opacity: 0.8;
+            transform: translateY(-5px);
+        }
+    }
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+@media (max-width: 1200px) {
+    .footer {
+        padding: 39px 15px 30px 15px;
+        &__navigation {
+            gap: 40px;
+        }
+    }
+    .footer-nav {
+        &__list {
+            gap: 20px;
+        }
+    }
+    .social-networks {
+        gap: 20px;
+    }
+}
+@media (max-width: 992px) {
+    .footer {
+        padding: 30px 15px 30px 15px;
+        @include flex(center, center);
+        flex-direction: column;
+        gap: 40px;
+        &__info {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    .arrow {
+        top: -40px;
+        &__icon {
+            width: 90px;
+            height: 90px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        padding: 146px 30px 84px 30px;
+        &__navigation {
+            flex-direction: column;
+            gap: 36px;
+        }
+        &__info {
+            flex-direction: column;
+            gap: 36px;
+        }
+        &__signature {
+            font-size: 24px;
+            line-height: 36px; 
+        }
+    }
+    .footer-nav {
+        &__list {
+            flex-direction: column;
+            gap: 36px;
+        }
+        &__link {
+            font-size: 22px;
+            line-height: 35px;
+        }
+    }
+    .arrow {
+        top: -48px;
+        left: 50%;
+        right: none;
+        transform: translate(-50%, 0);
+        &__icon {
+            width: 104px;
+            height: 104px;
+        }
+    }
+    .social-networks {
+        gap: 48px;
+        &__icon {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

@@ -1,0 +1,655 @@
+// My code
+.header {
+    margin: 0;
+    background: linear-gradient(216deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%), url("../src/image/raster/section1_header/background-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &__content {
+        margin: 0 auto;
+        width: 100%;
+        padding: 28px 26px 0 26px;
+        @extend %position-center;
+        flex-direction: column;
+        gap: 150px;
+    }
+    &__main-content {
+        width: 100%;
+        @include flex(center, start);
+        flex-direction: column;
+        gap: 239px;
+    }
+    &__main-group {
+        width: 100%;
+        gap: 200px;
+        padding-left: 39px;
+    }
+    &__decor-group {
+        gap: 20px;
+        @extend %position-center;
+        flex-direction: column;
+    }
+    &__decor-line-group {
+        position: relative;
+        @extend %position-center;
+        flex-direction: column;
+    }
+    &__top-decor-line {
+        top: 0;
+        position: sticky;
+        width: 4.002px;
+        height: 100px;
+        flex-shrink: 0;
+        background: $main-red;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45);
+    }
+    &__bottom-decor-line {
+        width: 2.001px;
+        height: 296px;
+        flex-shrink: 0;
+        background: linear-gradient(0deg, #FFF 0%, #FFF 100%), #FFF;
+    }
+    &__decror-title {
+        width: 17px;
+        height: 21.011px;
+        transform: rotate(-90deg);
+        flex-shrink: 0;
+        color: $white-stand;
+        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.10);
+        @extend %font-a;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+    }
+    &__info-group {
+        padding-top: 33px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__title {
+        width: 627.327px; 
+        color: $white-stand;
+        @extend %font-b;
+        font-size: 120px;
+        font-weight: 900;
+        line-height: 130px;
+        text-transform: uppercase;
+    }
+    &__info-btn {
+        @extend %position-center;
+        width: 271.141px;
+        height: 82px;
+        padding: 20px;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 211px;
+        background: $main-red;
+        color: rgba(255, 255, 255, 0.80);
+        text-align: center;
+        @extend %font-a;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 150%;
+        transition: all 0.3s linear ease-in-out;
+        &:hover {
+            opacity: 0.8;
+            transform: scale(0.9);
+        }
+    }
+}
+.nav-console {
+    width: 100%;
+    &__main-group {
+        gap: 60px;
+    }
+    &__other-group {
+        gap: 40px;
+        padding-right: 96px;
+    }
+}
+.logo {
+    &__image {
+        width: 185.096px;
+        height: 68.749px;
+        flex-shrink: 0;
+    }
+}
+.main-navigation {
+    &__list {
+        @extend %position-center;
+        gap: 60px;
+    }
+    &__link {
+        color: $white-stand;
+        @extend %font-a;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        display: flex;
+        transition: all 0.2s linear;
+        &:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+    }
+}
+.search__icon {
+    padding: 0;
+    transition: all 0.2s linear;
+    display: flex;
+    &:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
+}
+.search {
+    @extend %position-center;
+    .search__input {
+        width: 400px;
+        height: 60px;
+        background-color: $white-stand;
+        border-radius: 20px;
+        border: 1px solid $black-stand;
+        padding-left: 30px;
+    }
+}
+.other-navigation {
+    &__svg-icon {
+        fill: $white-stand;
+        display: flex;
+        transition: all 0.2s linear;
+        &:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+    }
+}
+.nav-link {
+    color: $white-stand;
+    @extend %font-a;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    transition: all 0.2s linear;
+    &:hover {
+        color: $gold-stand;
+        transform: scale(1.05);
+    }
+}
+.dop-info {
+    width: 100%;
+    height: auto;
+    padding-left: 37px;
+    @include flex(space-between, end);
+    &__decor-group {
+        @extend %position-center;        
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 44px;
+    }
+    &__decor-text {
+        transform: rotate(-90deg);
+        flex-shrink: 0;
+        color: $white-stand;
+        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.10);
+        @extend %font-a;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+    }
+    &__main-content {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        @include flex(end, end);
+    }
+    &__card-group {
+        @extend %position-center;       
+        gap: 198px; 
+        padding: 40px 128px 40px 71px;
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            opacity: 0.6;
+            background: $black-x;
+            border: 1px solid $black-x;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    }
+    &__card {
+        @include flex(center, start);
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__card-number {
+        color: $main-red;
+        @extend %font-b;
+        font-size: 16px;
+        font-weight: 900;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    &__text-group {
+        @include flex(center, start);
+        flex-direction: column;
+        gap: 5px;
+    }
+    &__card-title {
+        color: $white-stand;
+        @extend %font-a;
+        font-size: 26.409px;
+        font-weight: 700;
+        line-height: 41.081px; 
+    }
+    &__paragraf {
+        width: 210px;
+        color: $grey-x;
+        font-feature-settings: 'clig' off, 'liga' off;
+        @extend %font-a;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; 
+        letter-spacing: 0.5px;
+    }
+    &__video {
+        width: 417.217px;
+        height: 254px;
+        flex-shrink: 0;
+    }
+}
+// My code end
+// Bootstrap
+.btn {
+    padding: 0;
+    &:active {
+        outline: none;
+        border: none;
+    }
+}
+.modal-content {
+    background-color: inherit;
+}
+.container-fluid {
+    padding: 0;
+    &:focus-visible {
+        outline: none;
+        border: none;
+    }
+}
+.navbar {
+    &:focus-visible {
+        outline: none;
+        border: none;
+    }
+}
+.navbar-toggler {
+    border: none;
+    padding: 0;
+    &:focus {
+        outline: none;
+        border: none;
+    }
+    &:focus-visible {
+        outline: none;
+        border: none;
+    }
+}
+.offcanvas {
+    background-color: $black-stand;
+    border: none;
+}
+.btn-close {
+    background-color: $white-stand;
+    border-radius: 50%;
+}
+.offcanvas-body {
+    background-color: $black-stand;
+}
+.navbar-nav {
+    padding: 0;
+}
+// Bootstrap end
+@media (max-width: 1400px) {
+    .header {
+        &__content {
+            gap: 100px;
+        }
+        &__main-content {
+            gap: 200px;
+        }
+        &__main-group {
+            gap: 150px;
+        }
+        &__top-decor-line {
+            height: 90px;
+        }
+        &__bottom-decor-line {
+            height: 250px;
+        }
+        &__decror-title {
+            font-size: 15px;
+        }
+        &__title {
+            width: 550px;
+            font-size: 100px;
+        }
+        &__info-btn {
+            width: 250px;
+            height: 70px;
+            font-size: 20px;
+        }
+    }
+    .nav-console {
+        &__content {
+            padding: 0 130px 50px 28px;
+        }
+        &__main-group {
+            gap: 50px;
+        }
+        &__other-group {
+            gap: 30px;
+        }
+    }
+    .logo {
+        &__image {
+            width: 150px;
+            height: 60px;
+        }
+    }
+    .main-navigation {
+        &__list {
+            gap: 40px;
+        }
+        &__link {
+            font-size: 15px;
+        }
+    }
+    .search {
+        .search__input {
+            width: 300px;
+            height: 50px;
+        }
+    }
+    .nav-link {
+        font-size: 15px;
+    }
+    .dop-info {
+        &__decor-group {
+            gap: 26px;
+        }
+        &__decor-text {
+            font-size: 15px;
+        }
+        &__card-group {    
+            gap: 80px; 
+            padding: 30px 90px 30px 50px;
+        }
+        &__card-number {
+            font-size: 14px;
+        }
+        &__card-title {
+            font-size: 20px;
+            line-height: 30px; 
+        }
+        &__paragraf {
+            width: 160px;
+            font-size: 14px;
+            line-height: 20px; 
+        }
+        &__video {
+            width: 300px;
+            height: 185px;
+            flex-shrink: 0;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .header {
+        &__content {
+            gap: 90px;
+        }
+        &__main-content {
+            gap: 160px;
+        }
+        &__main-group {
+            gap: 100px;
+        }
+        &__top-decor-line {
+            height: 80px;
+        }
+        &__bottom-decor-line {
+            height: 200px;
+        }
+        &__decror-title {
+            font-size: 14px;
+        }
+        &__title {
+            width: 450px;
+            font-size: 85px;
+            line-height: 100px;
+        }
+    }
+    .nav-console {
+        &__main-group {
+            gap: 40px;
+        }
+        &__other-group {
+            padding-right: 50px;
+        }
+    }
+    .dop-info {
+        &__decor-group {
+            gap: 14px;
+        }
+        &__decor-text {
+            font-size: 12px;
+        }
+        &__card-group {    
+            gap: 50px; 
+            padding: 20px 60px 20px 40px;
+        }
+        &__card-number {
+            font-size: 14px;
+        }
+        &__card-title {
+            font-size: 18px;
+            line-height: 20px; 
+        }
+        &__paragraf {
+            width: 140px;
+            font-size: 12px;
+            line-height: 18px; 
+        }
+        &__video {
+            width: 220px;
+            height: 140px;
+            flex-shrink: 0;
+        }
+    }
+} 
+@media (max-width: 992px) {
+    .header {
+        &__content {
+            gap: 80px;
+        }
+        &__main-content {
+            gap: 120px;
+        }
+        &__main-group {
+            padding-top: 20px;
+            gap: 60px;
+        }
+        &__top-decor-line {
+            height: 60px;
+        }
+        &__bottom-decor-line {
+            height: 160px;
+        }
+        &__decror-title {
+            font-size: 13px;
+        }
+        &__title {
+            width: 250px;
+            font-size: 65px;
+            line-height: 90px;
+        }
+        &__info-btn {
+            width: 180px;
+            height: 50px;
+            padding: 15px;
+            font-size: 18px;
+        }
+    }
+    .nav-console {
+        &__content {
+            padding: 0 50px 50px 20px;
+        }
+    }
+    .dop-info {
+        &__decor-group {
+            gap: 14px;
+            padding-bottom: 20px;
+        }
+        &__decor-text {
+            font-size: 12px;
+        }
+        &__card-group {    
+            gap: 30px; 
+            padding: 17px 20px 17px 15px;
+        }
+        &__card-number {
+            font-size: 12px;
+        }
+        &__card-title {
+            font-size: 15px;
+            line-height: 18px; 
+        }
+        &__paragraf {
+            width: 120px;
+            font-size: 10px;
+            line-height: 15px; 
+        }
+        &__video {
+            width: 200px;
+            height: 125px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        &__content {
+            width: 344px;
+            padding: 48px 15px 40px 15px;
+            gap: 45px;
+        }
+        &__main-content {
+            gap: 54px;
+        }
+        &__main-group {
+            padding: 0;
+            gap: 0px;
+        }
+        &__top-decor-line {
+            display: none;
+        }
+        &__bottom-decor-line {
+            display: none;
+        }
+        &__decror-title {
+            display: none;
+        }
+        &__info-group {
+            padding-top: 0;
+            gap: 8px;
+        }
+        &__info-btn {
+            width: 315px;
+            height: 59px;
+            padding: 10.202px;
+            gap: 5.101px;
+            flex-shrink: 0;
+            border-radius: 107.631px;
+        }
+        &__title {
+            width: 314px;
+            font-size: 58.152px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 62.997px; 
+            text-transform: uppercase;
+        }
+    }
+    .nav-console {
+        &__main-group {
+            gap: 0;
+        }
+        &__other-group {
+            gap: 30px;
+            padding: 0;
+        }
+    }
+    .logo {
+        &__image {
+            width: 148.816px;
+            height: 59.799px;
+            flex-shrink: 0;
+        }
+    }
+    .dop-info {
+        width: 314px;
+        height: auto;
+        padding: 0;
+        margin: 0 auto;
+        &__decor-group {
+            display: none;
+        }
+        &__main-content {
+            position: static;
+            @include flex(center, start);
+            flex-direction: column;
+            gap: 1px;
+        }
+        &__card-group {    
+            @include flex(center, start);
+            flex-direction: column;
+            gap: 32px; 
+            padding: 35px 70px 30px 32px;
+        }
+        &__card {
+            @include flex(center, start);
+            flex-direction: column;
+            gap: 4px;
+        }
+        &__card-number {
+            font-size: 16px;
+        }
+        &__text-group {
+            gap: 4px;
+        }
+        &__card-title {
+            font-size: 26.409px;
+            line-height: 41.081px; 
+        }
+        &__paragraf {
+            width: 210px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__video {
+            width: 314px;
+            height: 191px;
+            flex-shrink: 0;
+        }
+    }
+}

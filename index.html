@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Indonesia</title>
+    <link rel="shortcut icon" href="./src/image/vector/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/modern-normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <!-- Section 1 header -->
+  <header class="header" id="header">
+    <div class="header__content">
+      <div class="nav-console d-flex justify-content-between align-item-center">
+        <div class="nav-console__main-group d-flex justify-content-center align-item-center">
+          <a class="logo" href="#">
+              <img class="logo__image" src="./src/image/vector/logo.svg" alt="Logo">
+          </a>
+          <nav class="main-navigation d-none d-lg-flex justify-content-center align-item-center">
+              <ul class="main-navigation__list">
+                  <li class="main-navigation__item">
+                      <a class="main-navigation__link" href="#description">destinations</a>
+                  </li>
+                  <li class="main-navigation__item">
+                      <a class="main-navigation__link" href="#explore">experiences</a>
+                  </li>
+                  <li class="main-navigation__item">
+                      <a class="main-navigation__link" href="#live">about</a>
+                  </li>
+                  <li class="main-navigation__item">
+                      <a class="main-navigation__link" href="#gallery">gallery</a>
+                  </li>
+              </ul>
+          </nav>
+        </div>
+        <div class="nav-console__other-group d-flex justify-content-center align-item-center">
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img class="search__icon" src="./src/image/vector/search.svg" alt="Search icon">
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <label class="search" for="search-input">
+                  <input class="search__input" type="text" id="search-input" placeholder="Search">
+                </label>
+              </div>
+            </div>
+          </div>
+          <nav class="other-navigation navbar">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <svg class="other-navigation__svg-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 27 24" fill="inherit">
+                  <g clip-path="url(#clip0_6_364)" filter="url(#filter0_d_6_364)">
+                    <path d="M4.91541 18H22.9248V16H4.91541V18ZM4.91541 13H22.9248V11H4.91541V13ZM4.91541 6V8H22.9248V6H4.91541Z" fill="inherit"/>
+                  </g>
+                  <defs>
+                    <filter id="filter0_d_6_364" x="-2.08618" y="-4" width="32.0125" height="32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset/>
+                      <feGaussianBlur stdDeviation="2"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_6_364"/>
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6_364" result="shape"/>
+                    </filter>
+                    <clipPath id="clip0_6_364">
+                      <rect width="24.0125" height="24" fill="inherit" transform="translate(1.91382)"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#description">destinations</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#explore">experiences</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#live">about</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#gallery">gallery</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="header__main-content">
+        <div class="header__main-group d-flex justify-content-start align-item-start">
+          <div class="header__decor-group">
+            <div class="header__decor-line-group">
+              <div class="header__top-decor-line"></div>
+              <div class="header__bottom-decor-line"></div>
+            </div>
+            <h4 class="header__decror-title">01</h4>
+          </div>
+          <div class="header__info-group d-flex justify-content-start align-item-start">
+            <h1 class="header__title">explore indonesia</h1>
+            <a class="header__info-btn" href="#">Start travelling</a>
+          </div>
+        </div>
+        <div class="dop-info">
+          <div class="dop-info__decor-group">
+            <h4 class="dop-info__decor-text">Fb</h4>
+            <h4 class="dop-info__decor-text">In</h4>
+            <h4 class="dop-info__decor-text">Tw</h4>
+          </div>
+          <div class="dop-info__main-content">
+            <div class="dop-info__card-group">
+              <div class="dop-info__card">
+                <h4 class="dop-info__card-number">01</h4>
+                <div class="dop-info__text-group">
+                  <h3 class="dop-info__card-title">Title here</h3>
+                  <p class="dop-info__paragraf">
+                    Lorem ipsum dolor sit 
+                    amet et amet ist ame.
+                  </p>
+                </div>
+              </div>
+              <div class="dop-info__card">
+                <h4 class="dop-info__card-number">02</h4>
+                <div class="dop-info__text-group">
+                  <h3 class="dop-info__card-title">Title here</h3>
+                  <p class="dop-info__paragraf">
+                    Lorem ipsum dolor sit 
+                    amet et amet ist ame.
+                  </p>
+                </div>
+              </div>
+              <div class="dop-info__card">
+                <h4 class="dop-info__card-number">03</h4>
+                <div class="dop-info__text-group">
+                  <h3 class="dop-info__card-title">Title here</h3>
+                  <p class="dop-info__paragraf">
+                    Lorem ipsum dolor sit 
+                    amet et amet ist ame.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <video class="dop-info__video" src="./src/video/video-sea.mp4" poster="./src/image/raster/section1_header/video-preview.png" controls></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Section 1 header end -->
+  <main class="main">
+    <!-- Section 2 description -->
+    <section class="description" id="description">
+      <div class="description__group">
+        <div class="container description__group-content">
+          <img class="description__image" src="./src/image/raster/section2_description/roud.png" srcset="./src/image/raster/section2_description/roud.png 1x, ./src/image/raster/section2_description/roud@2x.png 2x" alt="Image">
+          <div class="description__info">
+            <div class="description__text-box">
+              <h3 class="description__group-title">
+                The walkways of 
+                Indonesia spellbind
+              </h3>
+              <p class="description__group-paragraf">
+                Lorem ipsum dolor sit amet, consectetur adip 
+                iscing elit. Fusce commodo magna et libero 
+                mollis rhoncus. 
+              </p>
+            </div>
+            <a class="description__button" href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="description__group">
+        <div class="container description__group-content">
+          <img class="description__image d-block d-lg-none" src="./src/image/raster/section2_description/beach.png" srcset="./src/image/raster/section2_description/beach.png 1x, ./src/image/raster/section2_description/beach@2x.png 2x" alt="Image">
+          <div class="description__info">
+            <div class="description__text-box">
+              <h3 class="description__group-title">
+                Perfect beaches exude 
+                relaxation and fun
+              </h3>
+              <p class="description__group-paragraf">
+                Lorem ipsum dolor sit amet, consectetur adip 
+                iscing elit. Fusce commodo magna et libero 
+                mollis rhoncus. 
+              </p>
+            </div>
+            <a class="description__button" href="#">Learn More</a>
+          </div>
+          <img class="description__image d-lg-block d-none" src="./src/image/raster/section2_description/beach.png" srcset="./src/image/raster/section2_description/beach.png 1x, ./src/image/raster/section2_description/beach@2x.png 2x" alt="Image">
+        </div>
+      </div>
+    </section>
+    <!-- Section 2 description end -->
+    <!-- Section 3 explore -->
+    <section class="explore" id="explore">
+      <div class="explore__content">
+        <div class="explore__top-section">
+          <div class="container explore__top-content">
+            <h3 class="explore__top-title">Explore Our Secrets</h3>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="swiper-image" src="./src/image/raster/section3_explore/image-slide1.png" srcset="./src/image/raster/section3_explore/image-slide1.png 1x, ./src/image/raster/section3_explore/image-slide1@2x.png 2x" alt="Image">
+                  <img class="swiper-image" src="./src/image/raster/section3_explore/image-slide2.png" srcset="./src/image/raster/section3_explore/image-slide2.png 1x, ./src/image/raster/section3_explore/image-slide2@2x.png 2x" alt="Image">
+                  <img class="swiper-image" src="./src/image/raster/section3_explore/image-slide3.png" srcset="./src/image/raster/section3_explore/image-slide3.png 1x, ./src/image/raster/section3_explore/image-slide3@2x.png 2x" alt="Image">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-image" src="./src/image/raster/section3_explore/image-slide2.png" srcset="./src/image/raster/section3_explore/image-slide2.png 1x, ./src/image/raster/section3_explore/image-slide2@2x.png 2x" alt="Image">
+                  <img class="swiper-image" src="./src/image/raster/section3_explore/image-slide1.png" srcset="./src/image/raster/section3_explore/image-slide1.png 1x, ./src/image/raster/section3_explore/image-slide1@2x.png 2x" alt="Image">
+                  <img class="swiper-image" src="./src/image/raster/section3_explore/image-slide3.png" srcset="./src/image/raster/section3_explore/image-slide3.png 1x, ./src/image/raster/section3_explore/image-slide3@2x.png 2x" alt="Image">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-image" src="./src/image/raster/section3_explore/image-slide3.png" srcset="./src/image/raster/section3_explore/image-slide3.png 1x, ./src/image/raster/section3_explore/image-slide3@2x.png 2x" alt="Image">
+                  <img class="swiper-image" src="./src/image/raster/section3_explore/image-slide1.png" srcset="./src/image/raster/section3_explore/image-slide1.png 1x, ./src/image/raster/section3_explore/image-slide1@2x.png 2x" alt="Image">
+                  <img class="swiper-image" src="./src/image/raster/section3_explore/image-slide2.png" srcset="./src/image/raster/section3_explore/image-slide2.png 1x, ./src/image/raster/section3_explore/image-slide2@2x.png 2x" alt="Image">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-image" src="./src/image/raster/section3_explore/image-slide1.png" srcset="./src/image/raster/section3_explore/image-slide1.png 1x, ./src/image/raster/section3_explore/image-slide1@2x.png 2x" alt="Image">
+                  <img class="swiper-image" src="./src/image/raster/section3_explore/image-slide2.png" srcset="./src/image/raster/section3_explore/image-slide2.png 1x, ./src/image/raster/section3_explore/image-slide2@2x.png 2x" alt="Image">
+                  <img class="swiper-image" src="./src/image/raster/section3_explore/image-slide3.png" srcset="./src/image/raster/section3_explore/image-slide3.png 1x, ./src/image/raster/section3_explore/image-slide3@2x.png 2x" alt="Image">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-image" src="./src/image/raster/section3_explore/image-slide1.png" srcset="./src/image/raster/section3_explore/image-slide1.png 1x, ./src/image/raster/section3_explore/image-slide1@2x.png 2x" alt="Image">
+                  <img class="swiper-image" src="./src/image/raster/section3_explore/image-slide2.png" srcset="./src/image/raster/section3_explore/image-slide2.png 1x, ./src/image/raster/section3_explore/image-slide2@2x.png 2x" alt="Image">
+                  <img class="swiper-image" src="./src/image/raster/section3_explore/image-slide3.png" srcset="./src/image/raster/section3_explore/image-slide3.png 1x, ./src/image/raster/section3_explore/image-slide3@2x.png 2x" alt="Image">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-image" src="./src/image/raster/section3_explore/image-slide1.png" srcset="./src/image/raster/section3_explore/image-slide1.png 1x, ./src/image/raster/section3_explore/image-slide1@2x.png 2x" alt="Image">
+                  <img class="swiper-image" src="./src/image/raster/section3_explore/image-slide2.png" srcset="./src/image/raster/section3_explore/image-slide2.png 1x, ./src/image/raster/section3_explore/image-slide2@2x.png 2x" alt="Image">
+                  <img class="swiper-image" src="./src/image/raster/section3_explore/image-slide3.png" srcset="./src/image/raster/section3_explore/image-slide3.png 1x, ./src/image/raster/section3_explore/image-slide3@2x.png 2x" alt="Image">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-prev">
+              <svg class="swiper-button-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24" fill="inherit">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.07336 12.1394L13.5725 19.6386C14.5489 20.6149 14.5489 22.1978 13.5725 23.1741C12.5962 24.1504 11.0133 24.1504 10.037 23.1741L0.732233 13.8693C-0.244078 12.893 -0.244078 11.3101 0.732233 10.3338C0.857529 10.2085 0.992815 10.0993 1.13553 10.0061L10.4094 0.732233C11.3858 -0.244078 12.9687 -0.244078 13.945 0.732233C14.9213 1.70854 14.9213 3.29146 13.945 4.26777L6.07336 12.1394Z" fill="inherit"/>
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg class="swiper-button-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24" fill="inherit">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.60389 12.1394L1.1047 19.6386C0.128388 20.6149 0.128388 22.1978 1.1047 23.1741C2.08101 24.1504 3.66392 24.1504 4.64023 23.1741L13.945 13.8693C14.9213 12.893 14.9213 11.3101 13.945 10.3338C13.8197 10.2085 13.6844 10.0993 13.5417 10.0061L4.2678 0.732233C3.29149 -0.244078 1.70858 -0.244078 0.732269 0.732233C-0.244041 1.70854 -0.244041 3.29146 0.732269 4.26777L8.60389 12.1394Z" fill="inherit"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="explore__bottom-section">
+          <div class="explore__bottom-background"></div>
+          <div class="container explore__bottom-content">
+            <div class="explore__text-box">
+              <h2 class="explore__bottom-title">By The Numbers</h2>
+              <p class="explore__bottom-paragraf">
+                Lorem ipsum dolor sit amet, consectetur adipiscing 
+                elit. Fusce commodo magna et libero.Lorem ipsum 
+                dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div class="explore-statistics">
+              <div class="explore-statistics__card">
+                <h4 class="explore-statistics__number">100+</h4>
+                <p class="explore-statistics__paragraf">
+                  Lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit. Fusce 
+                  commodo magna et libero.
+                </p>
+              </div>
+              <div class="explore-statistics__card">
+                <h4 class="explore-statistics__number">43,000+</h4>
+                <p class="explore-statistics__paragraf explore-statistics__paragraf-center">
+                  Lorem ipsum dolor sit amet, consectetur 
+                  adipiscing elit. Fusce commodo.
+                </p>
+              </div>
+              <div class="explore-statistics__card">
+                <h4 class="explore-statistics__number">30+</h4>
+                <p class="explore-statistics__paragraf">
+                  Lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit. Fusce 
+                  commodo magna et libero.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 3 explore end -->
+    <!-- Section 4 our -->
+    <section class="our" id="our">
+      <div class="container our__content">
+        <div class="our__text-box">
+          <h3 class="our__title">
+            Our hills and valleys are like 
+            nothing you’ve seen.
+          </h3>
+          <p class="our__paragraf">
+            Lorem ipsum dolor sit amet, consectetur adipiscing 
+            elit. Fusce sit amet magna commodo, tempus dolor 
+            sit amet, laoreet elit. Donec mauris tortor.
+          </p>
+        </div>
+        <a class="our__button" href="#">Learn More</a>
+      </div>
+    </section>
+    <!-- Section 4 our end -->
+    <!-- Section 5 live -->
+    <section class="live" id="live">
+      <div class="container live__content">
+        <h3 class="live__title">
+          Live a life like you wouldn’t imagine, experience a 
+          life you wouldn’t expect.
+        </h3>
+        <div class="live__video-group">
+          <video class="live__main-video" src="./src/video/video1.mp4" poster="./src/image/raster/section5_live/main-video.png" controls></video>
+          <div class="live__other-video-group">
+            <div class="live__video-card">
+              <video class="live__mini-video" src="./src/video/video2.mp4" poster="./src/image/raster/section5_live/mini-video1.png" controls></video>
+              <div class="live__text-box">
+                <h5 class="live__card-title">In The Country</h5>
+                <p class="live__card-paragraf">
+                  Lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit. Phasellus 
+                  dapibus mauris in lectus tempus.
+                </p>
+              </div>
+            </div>
+            <div class="live__video-card">
+              <video class="live__mini-video" src="./src/video/video3.mp4" poster="./src/image/raster/section5_live/mini-video2.png" controls></video>
+              <div class="live__text-box">
+                <h5 class="live__card-title">In The City</h5>
+                <p class="live__card-paragraf">
+                  Lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit. 
+                  Phasellus dapibus mauris in.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 5 live end -->
+    <!-- Section 6 gallery -->
+    <section class="gallery" id="gallery">
+      <div class="container gallery__content">
+        <div class="gallery__text-box">
+          <h3 class="gallery__title">Photo Gallery</h3>
+          <p class="gallery__paragraf">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Phasellus dapibus mauris in lectus tempus, eget tincidunt.
+          </p>
+        </div>
+        <div class="gallery__image-group">
+          <img class="gallery__big-image" src="./src/image/raster/section6_gallery/image1.png" srcset="./src/image/raster/section6_gallery/image1.png 1x, ./src/image/raster/section6_gallery/image1@2x.png 2x" alt="Image">
+          <img class="gallery__little-image" src="./src/image/raster/section6_gallery/image2.png" srcset="./src/image/raster/section6_gallery/image2.png 1x, ./src/image/raster/section6_gallery/image2@2x.png 2x" alt="Image">
+          <img class="gallery__medium-image d-lg-none" src="./src/image/raster/section6_gallery/image5.png" srcset="./src/image/raster/section6_gallery/image5.png 1x, ./src/image/raster/section6_gallery/image5@2x.png 2x" alt="Image">
+          <img class="gallery__little-image" src="./src/image/raster/section6_gallery/image3.png" srcset="./src/image/raster/section6_gallery/image3.png 1x, ./src/image/raster/section6_gallery/image3@2x.png 2x" alt="Image">
+          <img class="gallery__big-image" src="./src/image/raster/section6_gallery/image4.png" srcset="./src/image/raster/section6_gallery/image4.png 1x, ./src/image/raster/section6_gallery/image4@2x.png 2x" alt="Image">
+          <img class="gallery__medium-image d-none d-lg-block" src="./src/image/raster/section6_gallery/image5.png" srcset="./src/image/raster/section6_gallery/image5.png 1x, ./src/image/raster/section6_gallery/image5@2x.png 2x" alt="Image">
+          <img class="gallery__medium-image" src="./src/image/raster/section6_gallery/image6.png" srcset="./src/image/raster/section6_gallery/image6.png 1x, ./src/image/raster/section6_gallery/image6@2x.png 2x" alt="Image">
+        </div>
+      </div>
+    </section>
+    <!-- Section 6 gallery end -->
+    <!-- Section 7 getting -->
+    <section class="getting" id="getting">
+      <div class="container getting__content">
+        <h3 class="getting__title">Getting there</h3>
+        <div class="getting__main-content">
+          <div class="getting__central-line"></div>
+          <div class="getting__section-group">
+            <div class="getting__section">
+              <div class="getting__number-box">
+                <h4 class="getting__number-text">1</h4>
+              </div>
+              <div class="getting__text-box">
+                <h4 class="getting__section-title">Bookings your flights</h4>
+                <div class="getting__show-box d-lg-none d-flex">
+                  <p class="getting__show-paragraf">
+                    Lorem ipsum dolor set,,,,
+                  </p>
+                  <button class="getting__show-btn">Show more</button>
+                </div>
+                <p class="getting__section-paragraf">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus 
+                  tempus, eget tincidunt lacus varius. Sed euismod orci dictum faucibus malesuada. Praesent sed 
+                  eros tincidunt, viverra neque auctor, lobortis enim.
+                </p>
+              </div>
+            </div>
+            <div class="getting__section">
+              <div class="getting__number-box">
+                <h4 class="getting__number-text">2</h4>
+              </div>
+              <div class="getting__text-box">
+                <h4 class="getting__section-title">Choosing your hotel</h4>
+                <div class="getting__show-box d-lg-none d-flex">
+                  <p class="getting__show-paragraf">
+                    Lorem ipsum dolor set,,,,
+                  </p>
+                  <button class="getting__show-btn">Show more</button>
+                </div>
+                <p class="getting__section-paragraf">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus 
+                  tempus, eget tincidunt lacus varius. Sed euismod orci dictum faucibus malesuada. Praesent sed 
+                  eros tincidunt, viverra neque auctor, lobortis enim.
+                </p>
+              </div>
+              <div class="getting-card">
+                <video class="getting-card__video" src="./src/video/video-moto.mp4" poster="./src/image/raster/section7_getting/moto.png" controls></video>
+                <div class="getting__show-box d-lg-none d-flex">
+                  <p class="getting__show-paragraf">
+                    Lorem ipsum dolor set,,,,
+                  </p>
+                  <button class="getting__show-btn">Show more</button>
+                </div>
+                <div class="getting-card__text-box">
+                  <h4 class="getting-card__title">Travelling there</h4>
+                  <p class="getting-card__paragraf">
+                    Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit. Phasellus dapibus mauris 
+                    in lectus tempus, eget tincidunt.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="getting__section">
+              <div class="getting__number-box">
+                <h4 class="getting__number-text">3</h4>
+              </div>
+              <div class="getting__text-box">
+                <h4 class="getting__section-title">Planning your experiences</h4>
+                <div class="getting__show-box d-lg-none d-flex">
+                  <p class="getting__show-paragraf">
+                    Lorem ipsum dolor set,,,,
+                  </p>
+                  <button class="getting__show-btn">Show more</button>
+                </div>
+                <p class="getting__section-paragraf">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus 
+                  tempus, eget tincidunt lacus varius. 
+                </p>
+              </div>
+              <a class="getting__button" href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 7 getting end -->
+  </main>
+  <!-- Section 8 footer -->
+  <footer class="footer" id="footer">
+    <div class="footer__navigation">
+      <a class="logo-footer" href="#">
+        <img class="logo-footer__image" src="./src/image/vector/logo-footer.svg" alt="Logo">
+      </a>
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#live">About</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#description">Pricing</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#our">Company</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#getting">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__info d-flex justify-content-center align-item-center">
+      <div class="social-networks d-flex justify-content-center align-item-center">
+        <a class="social-networks__link" href="#">
+          <svg class="social-networks__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="inherit">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.457 19V12.25H15.643L16 9.25H13.457V7.789C13.457 7.0165 13.4781 6.25 14.6295 6.25H15.7958V4.105C15.7958 4.07275 14.794 4 13.7805 4C11.664 4 10.3387 5.24275 10.3387 7.525V9.25H8V12.25H10.3387V19H13.457Z" fill="inherit"/>
+          </svg>
+        </a>
+        <a class="social-networks__link" href="#">
+          <svg class="social-networks__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="inherit">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20 19H16.9231V13.3967C16.9231 11.8596 16.2715 11.0022 15.1031 11.0022C13.8315 11.0022 13.0769 11.8956 13.0769 13.3967V19H10V8.59243H13.0769V9.76288C13.0769 9.76288 14.0423 8 16.2177 8C18.3938 8 20 9.3818 20 12.2415C20 15.1004 20 19 20 19ZM5.50031 6C4.67151 6 4 5.32819 4 4.4997C4 3.67181 4.67151 3 5.50031 3C6.32849 3 7 3.67181 7 4.4997C7.00061 5.32819 6.32849 6 5.50031 6ZM4 19H7V9H4V19Z" fill="inherit"/>
+          </svg>
+        </a>
+        <a class="social-networks__link" href="#">
+          <svg class="social-networks__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="inherit">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.8751 10.6027H12.1479C12.1479 11.3023 12.1479 12.7015 12.1436 13.4011H16.0418C15.8925 14.1007 15.3628 15.0802 14.6145 15.5734C14.6138 15.5727 14.6131 15.5776 14.6116 15.5769C13.6167 16.2338 12.3037 16.3829 11.3288 16.187C9.80069 15.8833 8.59134 14.7752 8.10032 13.3675C8.10317 13.3654 8.10532 13.3459 8.10746 13.3445C7.80012 12.4714 7.80012 11.3023 8.10746 10.6027H8.10675C8.50272 9.31683 9.74851 8.14359 11.2788 7.82247C12.5096 7.56152 13.8983 7.84416 14.9197 8.79982C15.0555 8.6669 16.7995 6.96405 16.9303 6.82553C13.4409 3.66541 7.85373 4.77708 5.7631 8.85789H5.76239C5.76239 8.85789 5.7631 8.85789 5.75882 8.86558C4.72458 10.87 4.76747 13.2318 5.76596 15.1404C5.7631 15.1425 5.76096 15.1438 5.75882 15.1459C6.66368 16.902 8.31045 18.2487 10.2946 18.7615C12.4024 19.3142 15.0848 18.9364 16.8817 17.3112C16.8824 17.3119 16.8831 17.3126 16.8838 17.3133C18.4062 15.9421 19.354 13.6061 18.8751 10.6027Z" fill="inheirt"/>
+          </svg>
+        </a>
+      </div>
+      <h5 class="footer__signature">Copyright © 2019</h5>
+    </div>
+    <a class="arrow" href="#header">
+      <svg class="arrow__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124" fill="none">
+        <g filter="url(#filter0_d_26_150)">
+          <circle cx="62" cy="55" r="52" fill="#DD2242"/>
+        </g>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M80.292 60.6276C81.3222 61.6577 81.3222 63.328 80.292 64.3581C79.2618 65.3883 77.5916 65.3883 76.5614 64.3581L62.1386 49.9353L47.5032 64.5707C46.473 65.6008 44.8028 65.6008 43.7726 64.5707C42.7425 63.5405 42.7425 61.8703 43.7726 60.8401L59.6276 44.9852C60.1526 44.4601 60.8439 44.2027 61.532 44.2128C62.4942 43.8006 63.6516 43.9872 64.437 44.7726L80.292 60.6276Z" fill="white"/>
+        <defs>
+          <filter id="filter0_d_26_150" x="0" y="0" width="124" height="124" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="7"/>
+            <feGaussianBlur stdDeviation="5"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_26_150"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_26_150" result="shape"/>
+          </filter>
+        </defs>
+      </svg>
+    </a>
+  </footer>
+  <!-- Section 8 footer end -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="./src/js/script.js"></script>   
+</body>
+</html>
