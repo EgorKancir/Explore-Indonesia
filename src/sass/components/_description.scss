@@ -68,10 +68,24 @@
         font-size: 18px;
         font-weight: 700;
         line-height: 150%; 
-        transition: all 0.3s linear ease-in-out;
+        transition: all 0.3s ease-in-out;
         &:hover {
             opacity: 0.8;
             transform: scale(0.9);
+        }
+    }
+}
+@media (min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .description {
+        &__group {
+            &:nth-child(1){
+                background: linear-gradient(0deg, #010A20 0%, rgba(1, 10, 32, 0.00) 100%), url("../src/image/raster/section2_description/group1@2x.png");
+            }
+            &:nth-child(2){
+                background: linear-gradient(180deg, #010A20 0%, rgba(1, 10, 32, 0.00) 100%), url("../src/image/raster/section2_description/group2@2x.png");
+            }
         }
     }
 }

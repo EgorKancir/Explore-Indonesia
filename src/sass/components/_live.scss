@@ -70,6 +70,13 @@
         opacity: 0.7;
     }
 }
+@media (min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .live {
+        background-image: url("../src/image/raster/section5_live/background-image@2x.png");
+    }
+}
 @media (max-width: 1400px) {
     .live {
         &__content {

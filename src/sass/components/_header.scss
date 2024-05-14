@@ -91,7 +91,7 @@
         font-size: 20px;
         font-weight: 700;
         line-height: 150%;
-        transition: all 0.3s linear ease-in-out;
+        transition: all 0.3s ease-in-out;
         &:hover {
             opacity: 0.8;
             transform: scale(0.9);
@@ -320,6 +320,14 @@
     padding: 0;
 }
 // Bootstrap end
+@media (min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .header {
+        margin: 0;
+        background: linear-gradient(216deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%), url("../src/image/raster/section1_header/background-image@2x.png");
+    }
+}
 @media (max-width: 1400px) {
     .header {
         &__content {

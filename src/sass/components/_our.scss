@@ -54,11 +54,18 @@
         font-size: 18px;
         font-weight: 700;
         line-height: 150%; 
-        transition: all 0.3s linear ease-in-out;
+        transition: all 0.3s ease-in-out;
         &:hover {
             opacity: 0.8;
             transform: scale(0.9);
         }
+    }
+}
+@media (min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .our {
+        background-image: url("../src/image/raster/section4_our/decor-line@2x.png");
     }
 }
 @media (max-width: 768px) {
