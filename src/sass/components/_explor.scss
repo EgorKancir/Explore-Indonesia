@@ -35,7 +35,7 @@
         z-index: 1;
     }
     &__bottom-content {
-        padding: 200px 0 205px 0;
+        padding: 200px 15px 205px 15px;
         @extend %position-center;
         flex-direction: column;
         gap: 40px;
@@ -179,7 +179,7 @@
         background-image: url("../src/image/raster/section3_explore/background-image@2x.png");
     }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1800px) {
     .explore {
         &__content {
             gap: 700px;
@@ -188,7 +188,7 @@
             padding-top: 120px;
         }
         &__bottom-content {
-            padding: 180px 0 185px 0;
+            padding: 180px 15px 185px 15px;
         }
     }
     .explore-statistics {
@@ -236,7 +236,7 @@
             font-size: 45px;
         }
         &__bottom-content {
-            padding: 170px 0 175px 0;
+            padding: 170px 15px 175px 15px;
             gap: 30px;
         }
         &__text-box {
@@ -305,7 +305,7 @@
             gap: 25px;
         }
         &__bottom-content {
-            padding: 80px 0 80px 0;
+            padding: 80px 15px 80px 15px;
         }
         &__bottom-title {
             font-size: 45px;
@@ -365,7 +365,7 @@
             line-height: 46px; 
         }
         &__bottom-content {
-            padding: 60px 0 70px 0;
+            padding: 60px 15px 70px 15px;
             gap: 60px;
         }
         &__text-box {
@@ -447,3 +447,40 @@
         height: 16px;
     }
 }
+@media (max-width: 480px) {
+    .explore {
+        &__bottom-title {
+            width: 100%;
+            font-size: 35px;
+        }
+        &__bottom-paragraf {
+            width: 290px;
+            font-size: 14px;
+        }
+    }
+    .explore-statistics {
+        &__paragraf {
+            width: 100%;
+            font-size: 14px;
+        }
+        &__paragraf-center {
+            width: 100%;
+        }
+    }
+    .swiper {
+        width: 240px;
+        height: 210px;
+    }
+    .swiper-image {
+        width: 240px;
+        height: auto;
+    }
+    .swiper-button-prev {
+        top: 210px;
+        left: 18px;
+    }
+    .swiper-button-next {
+        top: 210px;
+        right: 18px;
+    }
+} 

@@ -89,7 +89,7 @@
         }
     }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1800px) {
     .description {
         &__group-content {
             @include flex(center, start);
@@ -218,3 +218,15 @@
         }
     }
 }
+@media (max-width: 480px) {
+    .description {
+        &__image {
+            width: 290px;
+            height: auto;
+        }
+        &__button {
+            width: 290px;
+            height: 70px;
+        }
+    }
+} 

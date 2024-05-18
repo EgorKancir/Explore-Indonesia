@@ -328,7 +328,7 @@
         background: linear-gradient(216deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%), url("../src/image/raster/section1_header/background-image@2x.png");
     }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1800px) {
     .header {
         &__content {
             gap: 100px;
@@ -658,6 +658,31 @@
             width: 314px;
             height: 191px;
             flex-shrink: 0;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .header {
+        &__content {
+            width: 320px;
+        }
+        &__info-btn {
+            width: 290px;
+            height: 54px;
+        }
+        &__title {
+            width: 290px;
+            font-size: 55px;
+        }
+    }
+    .dop-info {
+        width: 290px;
+        &__card-group {    
+            padding: 35px 48px 30px 32px;
+        }
+        &__video {
+            width: 290px;
+            height: auto;        
         }
     }
 }

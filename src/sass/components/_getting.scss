@@ -68,9 +68,6 @@
         font-weight: 700;
         line-height: 41.081px; 
     }
-    &__central-line {
-        height: 930px;
-    }
     &__section-paragraf {
         color: rgba(21, 20, 57, 0.40);
         @extend %font-a;
@@ -135,7 +132,7 @@
         line-height: 38.146px; 
     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1800px) {
     .getting {
         &__content {
             padding-left: 15px;
@@ -147,15 +144,15 @@
             padding-left: 40px;
         }
         &__central-line {
-            height: 1030px;
+            height: 900px;
         }
         &__section-paragraf {
-            width: 600px;
+            width: 800px;
         }
     }
     .getting-card {
         &__paragraf {
-            width: 300px;
+            width: 500px;
         }
     }
 }
@@ -276,6 +273,14 @@
         &__video {
             width: 314px;
             height: 208px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .getting-card {
+        &__video {
+            width: 100%;
+            height: auto;
         }
     }
 }

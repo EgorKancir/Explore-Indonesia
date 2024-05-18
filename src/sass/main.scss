@@ -42,7 +42,7 @@ li {
 'components/gallery',
 'components/getting',
 'components/footer';
-@media (max-width: 1400px) {
+@media (max-width: 1800px) {
     .container {
         width: 1200px;
     }
@@ -60,5 +60,10 @@ li {
 @media (max-width: 768px) {
     .container {
         width: 344px;
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        width: 320px;
     }
 }

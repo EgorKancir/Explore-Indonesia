@@ -71,7 +71,7 @@
         transform: scale(1.03);
     }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1800px) {
     .gallery {
         &__image-group {
             padding: 0 45px;
@@ -167,6 +167,26 @@
         }
         &__medium-image {
             width: 151px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .gallery {
+        &__paragraf {
+            width: 100%;
+        }
+        &__image-group {
+            gap: 10px;
+            height: 430px;
+        }
+        &__big-image {
+            width: 135px;
+        }
+        &__little-image {
+            width: 135px;
+        }
+        &__medium-image {
+            width: 135px;
         }
     }
 }

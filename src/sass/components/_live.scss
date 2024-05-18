@@ -77,7 +77,7 @@
         background-image: url("../src/image/raster/section5_live/background-image@2x.png");
     }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1800px) {
     .live {
         &__content {
             gap: 80px;
@@ -167,6 +167,28 @@
             font-size: 16px;
             line-height: 24px; 
             text-align: center;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .live {
+        &__title {
+            width: 100%;
+        }  
+        &__main-video {
+            width: 290px;
+            height: auto;
+        }
+        &__mini-video {
+            width: 290px;
+            height: auto;     
+        }
+        &__card-title {
+            font-size: 18px;
+        }
+        &__card-paragraf {
+            width: 100%;
+            font-size: 14px;
         }
     }
 }
