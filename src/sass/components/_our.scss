@@ -2,7 +2,7 @@
     margin: 0;
     padding: 248px 0 257px 0;
     background-color: $white-stand;
-    background-image: url("../src/image/raster/section4_our/decor-line.png");
+    background-image: url("../image/raster/section4_our/decor-line.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -65,12 +65,12 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .our {
-        background-image: url("../src/image/raster/section4_our/decor-line@2x.png");
+        background-image: url("../image/raster/section4_our/decor-line@2x.png");
     }
 }
 @media (max-width: 768px) {
     .our {
-        background-image: url("../src/image/raster/section4_our/decor-line_mobile.png");
+        background-image: url("../image/raster/section4_our/decor-line_mobile.png");
         padding: 171px 0 116px 0;
         &__content {
             gap: 40px;
@@ -99,7 +99,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .our {
-            background-image: url("../src/image/raster/section4_our/decor-line_mobile@2x.png");
+            background-image: url("../image/raster/section4_our/decor-line_mobile@2x.png");
         }
     }
 }

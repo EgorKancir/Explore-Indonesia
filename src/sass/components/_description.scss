@@ -2,20 +2,24 @@
     margin: 0;
     padding: 0;
     background: $black-y;
+    overflow: hidden;
     &__group {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         &:nth-child(1){
             padding: 207px 0 90px 0;
-            background: linear-gradient(0deg, #010A20 0%, rgba(1, 10, 32, 0.00) 100%), url("../src/image/raster/section2_description/group1.png");
+            background: linear-gradient(0deg, #010A20 0%, rgba(1, 10, 32, 0.00) 100%), url("../image/raster/section2_description/group1.png");
         }
         &:nth-child(2){
             padding: 90px 0 305px 0;
-            background: linear-gradient(180deg, #010A20 0%, rgba(1, 10, 32, 0.00) 100%), url("../src/image/raster/section2_description/group2.png");
+            background: linear-gradient(180deg, #010A20 0%, rgba(1, 10, 32, 0.00) 100%), url("../image/raster/section2_description/group2.png");
         }
     }
     &__group-content {
+        transition: all 2s ease-in-out;
+        opacity: 0;
+        transform: scale(0.6);
         @include flex(center, start);
         gap: 125px;
     }
@@ -81,10 +85,10 @@
     .description {
         &__group {
             &:nth-child(1){
-                background: linear-gradient(0deg, #010A20 0%, rgba(1, 10, 32, 0.00) 100%), url("../src/image/raster/section2_description/group1@2x.png");
+                background: linear-gradient(0deg, #010A20 0%, rgba(1, 10, 32, 0.00) 100%), url("../image/raster/section2_description/group1@2x.png");
             }
             &:nth-child(2){
-                background: linear-gradient(180deg, #010A20 0%, rgba(1, 10, 32, 0.00) 100%), url("../src/image/raster/section2_description/group2@2x.png");
+                background: linear-gradient(180deg, #010A20 0%, rgba(1, 10, 32, 0.00) 100%), url("../image/raster/section2_description/group2@2x.png");
             }
         }
     }

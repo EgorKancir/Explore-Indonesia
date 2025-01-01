@@ -1,7 +1,7 @@
 // Explore
 .explore {
     margin: 0;
-    background-image: url("../src/image/raster/section3_explore/background-image.png");
+    background-image: url("../image/raster/section3_explore/background-image.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -176,7 +176,7 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .explore {
-        background-image: url("../src/image/raster/section3_explore/background-image@2x.png");
+        background-image: url("../image/raster/section3_explore/background-image@2x.png");
     }
 }
 @media (max-width: 1800px) {

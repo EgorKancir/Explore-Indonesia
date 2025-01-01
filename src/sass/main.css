@@ -53,7 +53,7 @@ li {
 
 .header {
   margin: 0;
-  background: linear-gradient(216deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%), url("../src/image/raster/section1_header/background-image.png");
+  background: linear-gradient(216deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%), url("../image/raster/section1_header/background-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -373,7 +373,7 @@ li {
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header {
     margin: 0;
-    background: linear-gradient(216deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%), url("../src/image/raster/section1_header/background-image@2x.png");
+    background: linear-gradient(216deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%), url("../image/raster/section1_header/background-image@2x.png");
   }
 }
 @media (max-width: 1800px) {
@@ -712,6 +712,7 @@ li {
   margin: 0;
   padding: 0;
   background: #010A20;
+  overflow: hidden;
 }
 .description__group {
   background-repeat: no-repeat;
@@ -720,13 +721,16 @@ li {
 }
 .description__group:nth-child(1) {
   padding: 207px 0 90px 0;
-  background: linear-gradient(0deg, #010A20 0%, rgba(1, 10, 32, 0) 100%), url("../src/image/raster/section2_description/group1.png");
+  background: linear-gradient(0deg, #010A20 0%, rgba(1, 10, 32, 0) 100%), url("../image/raster/section2_description/group1.png");
 }
 .description__group:nth-child(2) {
   padding: 90px 0 305px 0;
-  background: linear-gradient(180deg, #010A20 0%, rgba(1, 10, 32, 0) 100%), url("../src/image/raster/section2_description/group2.png");
+  background: linear-gradient(180deg, #010A20 0%, rgba(1, 10, 32, 0) 100%), url("../image/raster/section2_description/group2.png");
 }
 .description__group-content {
+  transition: all 2s ease-in-out;
+  opacity: 0;
+  transform: scale(0.6);
   display: flex;
   justify-content: center;
   align-items: start;
@@ -791,10 +795,10 @@ li {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .description__group:nth-child(1) {
-    background: linear-gradient(0deg, #010A20 0%, rgba(1, 10, 32, 0) 100%), url("../src/image/raster/section2_description/group1@2x.png");
+    background: linear-gradient(0deg, #010A20 0%, rgba(1, 10, 32, 0) 100%), url("../image/raster/section2_description/group1@2x.png");
   }
   .description__group:nth-child(2) {
-    background: linear-gradient(180deg, #010A20 0%, rgba(1, 10, 32, 0) 100%), url("../src/image/raster/section2_description/group2@2x.png");
+    background: linear-gradient(180deg, #010A20 0%, rgba(1, 10, 32, 0) 100%), url("../image/raster/section2_description/group2@2x.png");
   }
 }
 @media (max-width: 1800px) {
@@ -929,7 +933,7 @@ li {
 }
 .explore {
   margin: 0;
-  background-image: url("../src/image/raster/section3_explore/background-image.png");
+  background-image: url("../image/raster/section3_explore/background-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1103,7 +1107,7 @@ li {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .explore {
-    background-image: url("../src/image/raster/section3_explore/background-image@2x.png");
+    background-image: url("../image/raster/section3_explore/background-image@2x.png");
   }
 }
 @media (max-width: 1800px) {
@@ -1397,7 +1401,7 @@ li {
   margin: 0;
   padding: 248px 0 257px 0;
   background-color: #FFF;
-  background-image: url("../src/image/raster/section4_our/decor-line.png");
+  background-image: url("../image/raster/section4_our/decor-line.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1454,12 +1458,12 @@ li {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .our {
-    background-image: url("../src/image/raster/section4_our/decor-line@2x.png");
+    background-image: url("../image/raster/section4_our/decor-line@2x.png");
   }
 }
 @media (max-width: 768px) {
   .our {
-    background-image: url("../src/image/raster/section4_our/decor-line_mobile.png");
+    background-image: url("../image/raster/section4_our/decor-line_mobile.png");
     padding: 171px 0 116px 0;
   }
   .our__content {
@@ -1487,7 +1491,7 @@ li {
 }
 @media (max-width: 768px) and (min-device-pixel-ratio: 2), (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 192dpi), (max-width: 768px) and (min-resolution: 2dppx) {
   .our {
-    background-image: url("../src/image/raster/section4_our/decor-line_mobile@2x.png");
+    background-image: url("../image/raster/section4_our/decor-line_mobile@2x.png");
   }
 }
 @media (max-width: 480px) {
@@ -1508,7 +1512,7 @@ li {
   margin: 0;
   padding: 140px 0 255px 0;
   background: #010A20;
-  background-image: url("../src/image/raster/section5_live/background-image.png");
+  background-image: url("../image/raster/section5_live/background-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1580,7 +1584,7 @@ li {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .live {
-    background-image: url("../src/image/raster/section5_live/background-image@2x.png");
+    background-image: url("../image/raster/section5_live/background-image@2x.png");
   }
 }
 @media (max-width: 1800px) {
@@ -2357,4 +2361,4 @@ li {
   .container {
     width: 320px;
   }
-}
+}/*# sourceMappingURL=main.css.map */

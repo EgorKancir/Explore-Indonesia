@@ -1,7 +1,7 @@
 // My code
 .header {
     margin: 0;
-    background: linear-gradient(216deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%), url("../src/image/raster/section1_header/background-image.png");
+    background: linear-gradient(216deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%), url("../image/raster/section1_header/background-image.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -325,7 +325,7 @@
 (min-resolution: 2dppx) {
     .header {
         margin: 0;
-        background: linear-gradient(216deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%), url("../src/image/raster/section1_header/background-image@2x.png");
+        background: linear-gradient(216deg, rgba(0, 0, 0, 0.31) 29.66%, rgba(0, 0, 0, 0.29) 84.2%), url("../image/raster/section1_header/background-image@2x.png");
     }
 }
 @media (max-width: 1800px) {
